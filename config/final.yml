@@ -1,6 +1,6 @@
 ---
 final_name: zookeeper
 blobstore:
-  provider: s3
+  provider: local
   options:
-    bucket_name: zookeeper-blobs
+    blobstore_path: /tmp/zookeeper-blobs
