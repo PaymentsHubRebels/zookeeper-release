@@ -6,10 +6,10 @@ blobs
 .blobs
 .dev_builds
 .idea
-.final_builds/jobs/**/*.tgz
-.final_builds/packages/**/*.tgz
-.dev_builds
-releases/**/*.tgz
+.final_builds/
+.final_builds/
+.dev_builds/
+releases/
 .DS_Store
 *.swp
 *~
