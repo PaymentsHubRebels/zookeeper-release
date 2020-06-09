@@ -94,3 +94,7 @@ properties:
   force_sync:
     description: "Requires updates to be synced to media of the transaction log before finishing processing the update. Setting to 'no' improves performance dramatically at the cost of losing recent commits if all nodes crash at the same time"
     default: "yes"
+  data_dir:
+    default: /var/vcap/store/zookeeper
+  data_log_dir:
+    default: /var/vcap/sys/log/zookeeper
