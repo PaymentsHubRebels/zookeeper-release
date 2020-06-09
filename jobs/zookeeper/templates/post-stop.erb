@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -euo pipefail
+
+<% if p('transaction_logs_backup') %>
+
+transaction_logs_backup=<%= p('transaction_logs_backup') %>
+
+
+export LOG_DIR=/var/vcap/sys/log/zookeeper
+export DATA_DIR=/var/vcap/store/zookeeper
+export BACKUP_TRANS_LOG_DIR=/var/vcap/store/zookeeper.backup.$(date +%Y-%m-%d-%H:%M)
+
+if [[ "${transaction_logs_backup}" != false ]]
+then
+    mkdir -p ${BACKUP_TRANS_LOG_DIR}
+    cp -vpR ${LOG_DIR}/* ${BACKUP_TRANS_LOG_DIR}
+    chown -R vcap:vcap ${BACKUP_TRANS_LOG_DIR}
+fi
+
+<% end %>
+exit 0
