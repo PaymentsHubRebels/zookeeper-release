@@ -5,3 +5,4 @@ blobstore:
   options:
     bucket_name: zookeeper-boshrelease-blobstore
     region: eu-west-2
+    credentials_source: env_or_profile
