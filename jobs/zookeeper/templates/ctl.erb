@@ -17,7 +17,7 @@ case $1 in
 
   start)
     mkdir -p $LOG_DIR $RUN_DIR
-    chown -R vcap:vcap $LOG_DIR $RUN_DIR
+    chown -R vcap:vcap $LOG_DIR $RUN_DIR $ZOOCFGDIR
 
     echo $$ > $PIDFILE
 
