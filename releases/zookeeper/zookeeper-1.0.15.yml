@@ -1,0 +1,55 @@
+name: zookeeper
+version: 1.0.15
+commit_hash: ed1d829
+uncommitted_changes: false
+jobs:
+- name: smoke-tests
+  version: bb330657b6bdd12e2ff1b3bc53772f1683576e9ec45b010e2da4beb6afe1004a
+  fingerprint: bb330657b6bdd12e2ff1b3bc53772f1683576e9ec45b010e2da4beb6afe1004a
+  sha1: sha256:006ddd4c23de80c8d5f1af2bec5787ca3cf71f5601dc7021c54feda147c0d749
+  packages:
+  - smoke-tests
+  - python-2.7
+- name: status
+  version: 299009e28f2b9a858f54245a14f670c5207afcbcd2fa672441214f73cc8d3998
+  fingerprint: 299009e28f2b9a858f54245a14f670c5207afcbcd2fa672441214f73cc8d3998
+  sha1: sha256:bae6a50886ee540d24ef10126312ff9c7a30ba0a31b51c233d2bc0484ff3ee2f
+  packages: []
+- name: zookeeper
+  version: 619522fd0375296bbc51b0e1419045b88b3ac0bc184722a7ed0cc5374e1971de
+  fingerprint: 619522fd0375296bbc51b0e1419045b88b3ac0bc184722a7ed0cc5374e1971de
+  sha1: sha256:cfe96c00fe037a544783256d168d970244728d5dc67e35d130f973cd663f78b7
+  packages:
+  - openjdk-11
+  - zookeeper
+packages:
+- name: golang-1.14-linux
+  version: cf4f5cd04d2fd916aa2bc8e97e48189f273fd3e565c6641d762210b5fdda3f95
+  fingerprint: cf4f5cd04d2fd916aa2bc8e97e48189f273fd3e565c6641d762210b5fdda3f95
+  sha1: sha256:626de075fe86f39bf5ae54b32b627bad4783f45f112d19032a2db1372022183e
+  dependencies: []
+- name: openjdk-11
+  version: 1b2aca50b3a14a3fdf4e92b9b9dcee3359995915f0cedc2d1be78c54b6ac82dc
+  fingerprint: 1b2aca50b3a14a3fdf4e92b9b9dcee3359995915f0cedc2d1be78c54b6ac82dc
+  sha1: sha256:9734ac4ab5b8951df5f01fa3b9492d65e781dbf9f32c703b611202f526c40029
+  dependencies: []
+- name: python-2.7
+  version: 7063c9f4e43bf49374c2f6cc6c2f74a5467f2298
+  fingerprint: 7063c9f4e43bf49374c2f6cc6c2f74a5467f2298
+  sha1: bd130315766a7641dbd20aa328d16f084cc17965
+  dependencies: []
+- name: smoke-tests
+  version: c3900b61a3a123ba3b8f6b0f884d9bf04e60b99669645420367c1c3221fc3309
+  fingerprint: c3900b61a3a123ba3b8f6b0f884d9bf04e60b99669645420367c1c3221fc3309
+  sha1: sha256:0e2ec6b7f6470d37e3747e4064456f998bb17785212e45e23d6626939f35c1f9
+  dependencies:
+  - golang-1.14-linux
+- name: zookeeper
+  version: c76b03247f107b2c75d1f9b16f5733dd9065d9e5c31dec279102e83b530d57a2
+  fingerprint: c76b03247f107b2c75d1f9b16f5733dd9065d9e5c31dec279102e83b530d57a2
+  sha1: sha256:5e4118186309b80a3058cb031d5f510c2490dd4b1fd1a46dab1db9bcd0464e96
+  dependencies: []
+license:
+  version: 9c24b117919803cc53bca45643e8ab7cb238820ab189a674ab5135172a6e6f6e
+  fingerprint: 9c24b117919803cc53bca45643e8ab7cb238820ab189a674ab5135172a6e6f6e
+  sha1: sha256:728bf8359063c8b4ac493fe3bc06ab6b73a9bd8d9ecc078c84c498fb8bd54a45
